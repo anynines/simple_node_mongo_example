@@ -3,8 +3,6 @@ var seeds = require('../db/seeds.js');
 
 get_mongo_url = function () {
   try {
-		var mongodb_service_name = process.env.MONGODB_SERVICE_NAME;
-    console.log(process.env.MONGODB_SERVICE_NAME)
     var vcap_services = JSON.parse(process.env.VCAP_SERVICES);
     mongo_url = vcap_services[process.env.MONGODB_SERVICE][0].credentials.uri;
     return mongo_url;

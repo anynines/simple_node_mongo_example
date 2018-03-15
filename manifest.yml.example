@@ -6,7 +6,6 @@ applications:
   buildpack: nodejs_buildpack
   host: host_name # TODO change
   services:
-    - a9z-ph-mongodb
+    - mongodb
   env:
-    MONGODB_SERVICE_NAME: "a9s-ph-mongodb"
-    MONGODB_SERVICE: "a9s-mongodb"
+    MONGODB_SERVICE: "a9s-mongodb32"
