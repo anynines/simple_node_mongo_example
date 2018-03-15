@@ -8,4 +8,4 @@ applications:
   services:
     - mongodb
   env:
-     MONGODB_SERVICE: "a9s-mongodb32"
+    MONGODB_SERVICE: "a9s-mongodb32"
